@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+/* Root rules to apply to all aspects of the CSS */
+:root {
+    --primary-color: #333;
+    --secondary-color: #2828cc;
+    --accent1-color: #bfbfd9;
+    --accent2-color: #f1ebff;
+
+    /* fonts */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    --paragraph-background-color: #333;
+    --nav-link-color: #f1ebff;
+    --nav-background-color: #333;
+    --nav-hover-link-color: #f1ebff;
+    --nav-hover-background-color: #9999ea;
+}
+
+/****************************************************************
+*
+* Default tag properties *
+*
+*****************************************************************/
+
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    color: var(--accent3-color);
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    display: grid;
+    grid-column: 1/6;
+    padding: 20px 25px;
+    margin: -20px -10px 20px -10px;
+    background-color: rgb(46, 46, 255);
+}
+
+#profile {
+    display: grid;
+    grid-column: 1/2;
+    margin: 15px;
+    margin-left: 300px;
+}
+
+h1 {
+    display: grid;
+    grid-column: 2/3;
+    margin-top: 100px;
+}
+
+nav {
+    display: grid;
+    grid-column: 1/6;
+    align-self: center;
+    margin: -20px -10px 30px -10px;
+    background-color: black;
+}
+
+.navlink {
+    grid-column: 2/3;
+    color: #f1ebff;
+    padding: 18px;
+}
+
+h2 {
+    grid-column: 2/6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--accent2-color);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: var(--accent1-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************************************************************
+* *
+* default properties for all pages *
+* *
+*****************************************************************/
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
