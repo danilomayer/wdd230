@@ -32,11 +32,11 @@ h1 {
 }
 
 nav {
-    display: grid;
-    grid-column: 1/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 300px;
     font-size: larger;
-    align-self: center;
-    background-color: rgba(0, 0, 0, 0.404);
 }
 
 .navlink {
@@ -99,7 +99,7 @@ ul {
 
 footer {
     display: grid;
-    grid-column: 3/4;
+    grid-column: 2/3;
     justify-content: center;
     padding: 20px;
     margin: auto;
