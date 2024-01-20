@@ -14,7 +14,7 @@ header {
     display: grid;
     grid-column: 1/6;
     padding: 20px 25px;
-    background-color: rgb(46, 46, 255);
+    background-color: #7b7be6;
 }
 
 #profile {
@@ -76,7 +76,7 @@ h3 {
     margin: auto;
     border: 2px black;
     font-size: 1.5em;
-    background-color: #2828cc;
+    background-color: #7b7be6;
     color: black;
     padding: 10px;
     border-radius: 15px;
