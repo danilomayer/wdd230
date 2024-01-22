@@ -2,30 +2,27 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    max-width: 1600px;
     margin: 0 auto;
     font-size: 20px;
     background-color: #333;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 header {
     display: grid;
-    grid-column: 1/6;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 20px 25px;
     background-color: #7b7be6;
 }
 
 #profile {
     display: grid;
-    grid-column: 1/2;
+    grid-column: 2/3;
     margin: auto;
 }
 
 h1 {
     display: grid;
-    grid-column: 2/3;
+    grid-column: 3/5;
     margin: auto;
     margin-left: 25px;
     font-size: 2.5em;
@@ -33,9 +30,7 @@ h1 {
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 300px;
+    justify-content: space-around;
     font-size: larger;
 }
 
@@ -72,18 +67,20 @@ h2:after {
 }
 
 .card {
-    display: grid;
     margin-top: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 15px;
 }
 
 h3 {
+    display: flex;
     margin: auto;
-    border: 2px black;
     font-size: 1.5em;
     background-color: #7b7be6;
     color: black;
     padding: 10px;
     border-radius: 15px;
+    justify-content: center;
 }
 
 a {
@@ -106,7 +103,8 @@ ul {
 
 
 footer {
-    display: flex;
+    display: grid;
+    grid-column: 2/4;
     justify-content: center;
     padding: 20px;
     margin: 25px;
