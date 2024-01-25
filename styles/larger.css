@@ -4,6 +4,23 @@
         color: white;
     }
 
+    /********************************************/
+    .navigation {
+        display: none;
+        justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation a {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    /********************************************/
     main {
         grid-template-columns: 1fr;
     }

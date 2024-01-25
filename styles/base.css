@@ -9,29 +9,70 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     padding: 20px 25px;
     background-color: #7b7be6;
 }
 
-#profile {
+#profile,
+h1 {
     display: grid;
-    grid-column: 2/3;
     margin: auto;
 }
 
 h1 {
-    display: grid;
     grid-column: 3/5;
-    margin: auto;
     margin-left: 25px;
     font-size: 2.5em;
 }
 
-nav {
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.25rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
     display: flex;
-    justify-content: space-around;
-    font-size: larger;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+#active::before {
+    content: "➡";
 }
 
 nav a:hover {
@@ -99,6 +140,13 @@ ul {
     padding: 50px;
     margin: auto;
     margin-left: 2rem;
+}
+
+iframe {
+    display: flex;
+    margin: auto;
+    justify-self: center;
+    padding: 3%;
 }
 
 
