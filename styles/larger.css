@@ -17,7 +17,7 @@
 
     .navigation a {
         display: flex !important;
-        flex-direction: row;
+        flex-direction: row !important;
     }
 
     /********************************************/
