@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto+Slab&display=swap');
+
+:root {
+    --primary-color: #135290;
+    --secondary-color: #342E37;
+    --accent1-color: #A2D729;
+    --accent2-color: #FAFFFD;
+
+
+    --heading-font: 'Arvo', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+
+    --headline-color-on-white: #342E27;
+    /* headlines on a white background */
+    --headline-color-on-color: #A2D729;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #342E27;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #A2D729;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #FAFFFD;
+    --nav-link-color: #FAFFFD;
+    --nav-background-color: #342E27;
+    --nav-hover-link-color: #342E27;
+    --nav-hover-background-color: #A2D729;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--nav-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-color-on-white);
+    color: var(--paragraph-color-on-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
