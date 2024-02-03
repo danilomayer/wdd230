@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" width="px">
+    <meta name="CCM - Chamber of Commerce of Maringa"
+        content="Page dedicated to the association that promotes the commercial development of the city of Maringa.">
+    <meta property="og:title" content="CCM - Chamber of Commerce of Maringa">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ponta_Grossa_2019.jpg/270px-Ponta_Grossa_2019.jpg">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd230/">
+    <meta name="description"
+        content="Page dedicated to the association that promotes the commercial development of the city of Maringa.">
+    <title>CCM - Chamber of Commerce of Maringa</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="" alt="logo-img" class="logo-img">
+            <a href="" class="join">JOIN</a>
+        </header>
+
+        <nav>
+            <a href="" class="menu">MENU</a>
+            <a href="" class="discover">DISCOVER</a>
+            <a href="" class="directory">DIRECTORY</a>
+        </nav>
+
+        <div id="hero">
+            <div id="hero-box">
+                <img src="" alt="">
+            </div>
+            <div id="hero-msg">
+                <h1 class="chamber-title">Title for the Hero Image</h1>
+            </div>
+        </div>
+
+        <main>
+            <div id="current-event">
+                <h2>Current Events</h2>
+            </div>
+
+            <div id="weather-card">
+                <h2>Weather</h2>
+            </div>
+
+            <div id="ads-carrousel">
+                <h2>Ad Carrousel</h2>
+            </div>
+        </main>
+
+        <footer>
+            <div id="description">
+                <p>&copy; <span id="currentdate"></span> CCM - Chamber of Commerce of Maringa <br>
+                    by Danilo Mayer <br>
+                    for Brigham Young University Idaho - WDD230 class
+                </p>
+                <p><span id="lastModified"></span></p>
+            </div>
+            <div id="social">
+                Social media
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <!--Script below must be finished and debugged-->
+        <script>
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
+        </script>
+    </div>
+</body>
+
+</html>
