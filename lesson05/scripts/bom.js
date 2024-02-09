@@ -10,7 +10,7 @@ button.addEventListener('click', function () {
 
     li.textContent = input.value;
 
-    deleteButton.textContent = 'Remove';
+    deleteButton.textContent = ' ❌ ';
 
     li.append(deleteButton);
     list.append(li);
