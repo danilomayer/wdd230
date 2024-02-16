@@ -13,7 +13,7 @@
         content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ponta_Grossa_2019.jpg/270px-Ponta_Grossa_2019.jpg">
     <meta property="og:url" content="https://danilomayer.github.io/wdd230/">
     <title>Danilo Mayer - WDD 230 - Web Frontend Development</title>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.webp">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img id="profile" src="images/profile.jpg" alt="profile-photo">
+        <img id="profile" src="images/profile.webp" alt="profile-photo">
         <h1>Danilo Mayer</h1>
     </header>
 
@@ -35,6 +35,17 @@
             target="_blank">Scripture</a>
     </nav>
 
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/saopaulo-small.webp">
+            <img src="images/saopaulo-large.webp" alt="Sao Paulo Temple">
+        </picture>
+        <div class="herolabel">
+            <p>Sao Paulo Brazil Temple</p>
+        </div>
+    </div>
+
+
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -42,7 +53,7 @@
             <ul>
                 <li><a href="">Activity 1</a></li>
                 <li><a href="lesson02/design.html">lesson02</a></li>
-                <li><a href="images/csscombinators.jpg">CSS Combinators</a></li>
+                <li><a href="images/csscombinators.webp">CSS Combinators</a></li>
                 <li><a href="https://codepen.io/Danilo-Mayer/pen/bGZrYrp">CSS Pseudo-elements</a></li>
                 <li><a href="https://codepen.io/Danilo-Mayer/pen/JjzyvxG?editors=1100">Responsive menu using
                         'Hamburger'</a></li>
