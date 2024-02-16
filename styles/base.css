@@ -21,7 +21,7 @@ h1 {
 }
 
 h1 {
-    grid-column: 3/5;
+    grid-column: 3/4;
     margin-left: 25px;
     font-size: 2.5em;
 }
@@ -120,9 +120,8 @@ nav a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*Content*/
 main {
-    display: grid;
-    grid-column: 1/6;
     background-color: antiquewhite;
     color: #333;
     padding: 2%;
@@ -176,9 +175,10 @@ ul {
 
 iframe {
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     justify-self: center;
-    padding: 3%;
+    width: 350;
+    height: 250;
 }
 
 

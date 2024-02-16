@@ -4,9 +4,16 @@
         color: white;
     }
 
+    h1 {
+        grid-column: 3/5;
+        margin-left: 25px;
+        font-size: 2.5em;
+    }
+
     /********************************************/
     .navigation {
-        display: none;
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 
@@ -22,10 +29,29 @@
 
     /********************************************/
     main {
+        display: grid;
         grid-template-columns: 1fr;
+
+        grid-column: 1/6;
+        background-color: antiquewhite;
+        color: #333;
+        padding: 2%;
     }
 
     ul {
         padding-left: 30%;
+    }
+
+    .card {
+        margin-top: 1.5rem;
+        border: 2px solid #333;
+        border-radius: 15px;
+    }
+
+    iframe {
+        display: flex;
+        margin: 0 auto;
+        justify-self: center;
+        width: 450px;
     }
 }
