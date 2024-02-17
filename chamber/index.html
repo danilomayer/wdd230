@@ -26,15 +26,15 @@
 <body>
     <div id="content">
         <header>
-            <img src="" alt="logo-img" class="logo-img">
-            <a href="" class="join">JOIN</a>
+            <img src="images/c2636a763be04804b3b2530031452004.webp" alt="logo-img" class="logo-img">
         </header>
-
-        <button id="ham"></button>
+        <!--id ham == MENU ---- class menu = navlink-->
+        <button id="menu"></button>
         <nav class="navigation">
-            <a href="" class="menu">MENU</a>
-            <a href="" class="discover">DISCOVER</a>
-            <a href="" class="directory">DIRECTORY</a>
+            <a href="" class="navlink">HOME</a>
+            <a href="" class="navlink" target="_blank">DISCOVER</a>
+            <a href="" class="navlink" target="_blank">DIRECTORY</a>
+            <a href="" class="navlink" target="_blank">JOIN</a>
         </nav>
 
         <div id="hero">
@@ -77,10 +77,10 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hambutton.js"></script>
         <!--Script below must be finished and debugged-->
-        <script>
+        <!--<script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
             document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
-        </script>
+        </script>-->
     </div>
 </body>
 
