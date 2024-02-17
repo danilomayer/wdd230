@@ -39,7 +39,6 @@
     header {
         display: flex;
         justify-content: center;
-        /* Center the content horizontally */
         align-items: center;
         background-color: var(--nav-background-color);
         color: var(--nav-link-color);

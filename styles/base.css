@@ -158,7 +158,6 @@ h3 {
 
 a {
     color: #333;
-    padding: 18px;
     align-items: center;
     text-decoration: none;
 }
@@ -170,7 +169,6 @@ a {
 ul {
     padding: 50px;
     margin: auto;
-    margin-left: 2rem;
 }
 
 iframe {
