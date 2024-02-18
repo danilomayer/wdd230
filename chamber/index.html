@@ -11,7 +11,7 @@
     <meta property="og:title" content="CCM - Chamber of Commerce of Maringa">
     <meta property="og:type" content="website">
     <meta property="og:image"
-        content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ponta_Grossa_2019.jpg/270px-Ponta_Grossa_2019.jpg">
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Maring%C3%A1_City.jpg/268px-Maring%C3%A1_City.jpg">
     <meta property="og:url" content="https://danilomayer.github.io/wdd230/">
     <meta name="description"
         content="Page dedicated to the association that promotes the commercial development of the city of Maringa.">
@@ -31,7 +31,7 @@
                 🕶️
             </div>
         </header>
-        <!--id ham == MENU ---- class menu = navlink-->
+
         <button id="menu"></button>
         <nav class="navigation">
             <a href="" class="navlink">HOME</a>
@@ -40,12 +40,14 @@
             <a href="" class="navlink" target="_blank">JOIN</a>
         </nav>
 
-        <div id="hero">
-            <div id="hero-box">
-                <img src="" alt="">
-            </div>
-            <div id="hero-msg">
-                <h1 class="chamber-title">Welcome to the Chamber of Commerce of Maringa</h1>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/herotest.webp">
+                <source media="(max-width: 850px)" srcset="images/herotest.webp">
+                <img src="images/herotest.webp" alt="Maringa Downtown">
+            </picture>
+            <div class="herolabel">
+                <p>Maringa Downtown</p>
             </div>
         </div>
 
@@ -56,10 +58,19 @@
 
             <div id="weather-card">
                 <h2>Weather</h2>
+                <p>Temperature (Fahrenheit)</p>
+                <input id="temp" type="number">
+                <p>Wind Speed (mph)</p>
+                <input id="wind" type="number"><br>
+                <button class="getwindchill">Get Wind Chill</button>
+                <script src="scripts/windchill.js"></script>
             </div>
 
             <div id="ads-carrousel">
                 <h2>Ad Carrousel</h2>
+                <img src="images/add1.webp" alt="Cartao de visitas 1">
+                <img src="images/add2.webp" alt="Cartao de visitas 2">
+                <img src="images/add3.webp" alt="Cartao de visitas 3">
             </div>
         </main>
 
@@ -80,6 +91,7 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hambutton.js"></script>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
         <!--Script below must be finished and debugged-->
         <!--<script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
