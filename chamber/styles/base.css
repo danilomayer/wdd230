@@ -168,6 +168,16 @@ main {
     grid-row: 1/3;
 }
 
+.getwindchill {
+    margin: 1em;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    background-color: var(--accent1-color);
+    border-radius: 15px;
+    border: #000;
+}
+
 #ads-carrousel {
     grid-column: 1/3;
     grid-row: 3/4;
@@ -178,6 +188,11 @@ main {
     height: 50%;
     border: solid rgba(0, 0, 0, .75);
     margin: 10px;
+}
+
+p {
+    margin: 1em;
+    text-align: center;
 }
 
 /*FOOTER SECTION*/
