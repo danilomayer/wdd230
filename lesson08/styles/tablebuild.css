@@ -1,0 +1,51 @@
+body {
+    font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+    text-align: center;
+    margin: 10px auto;
+    border: thin solid rgba(0, 0, 0, 0.603);
+    box-shadow: 0 0 10px gray;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: larger;
+    background-color: rgba(0, 0, 255, 0.678);
+    font-weight: 500;
+}
+
+th:nth-of-type(1) {
+    font-size: larger;
+}
+
+tr:first-child th {
+    background-color: navy;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 255, 0.233);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid rgba(78, 66, 250, 0.199);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFDD0;
+}
