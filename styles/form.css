@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #9797eb;
+    --font-family: 'Arial', sans-serif;
+}
+
+main {
+    ]
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #9797eb;
+    border-radius: 10px;
+    padding: .5rem 3rem;
+    background-color: rgba(224, 223, 223, 0.692);
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input {
+    border: none;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    height: 44px;
+    width: 20rem;
+}
+
+#range {
+    display: block;
+    padding: .75rem 1.5rem;
+    height: 4px;
+    width: 50%;
+}
+
+#rangevalue {
+    display: block;
+    padding-bottom: 3rem;
+
+}
+
+label:nth-of-type(5) {
+    color: #333;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+form button {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}

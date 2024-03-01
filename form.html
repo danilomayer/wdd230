@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="WDD 230 - Web Frontend Development"
+        content="Course assignment portal page, developed by student Danilo Mayer in an effort to present Web Development skills">
+    <meta name=" author" content="Danilo Mayer">
+    <meta property="og:title" content="Danilo Mayer - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ponta_Grossa_2019.jpg/270px-Ponta_Grossa_2019.jpg">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd230/">
+    <title>Danilo Mayer - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="images/favicon.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img id="profile" src="images/profile.webp" alt="profile-photo">
+        <h1>Danilo Mayer</h1>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a class="navlink" href="#" id="active">Home</a>
+        <a class="navlink" href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a class="navlink" href="chamber/index.html">Chamber</a>
+        <a class="navlink" href="https://www.byui.edu/" target="_blank">BYU- Idaho</a>
+        <a class="navlink" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13"
+            target="_blank">Scripture</a>
+        <a class="navlink" href="form.html" target="_blank">Join</a>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+        <h1>Subscribe</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <label class="top">Username* <input type="text" id="user" name="user" required></label>
+                <label class="top">Password* <input type="password" id="password" name="password"
+                        pattern="[A-Za-z19]{8}" required></label>
+                <label class="top">Confirm Password* <input type="password" id="password2" name="password"
+                        required></label>
+                <label class="top">Email* <input type="email" id="email" name="email" required
+                        placeholder="Your byui email address" title="A valid byui.edu email address."
+                        pattern="[a-zA-Z0-9_.\-]+@byui.edu"></label>
+
+                <label class="top">Page Rating <input type="range" id="range" name="range" min="0" max="10" value="0"
+                        step="1">
+                </label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <div id="rangevalue">0</div>
+
+                <button>Join Now</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentdate"></span> <br> Danilo Mayer <br> Parana, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburguermenu.js"></script>
+    <script src="scripts/passwordconfirm.js"></script>
+    <script src="scripts/range.js"></script>
+</body>
+
+</html>
