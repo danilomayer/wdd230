@@ -1,0 +1,53 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                },
+                {
+                    "url": "lesson04",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapter"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "lesson07/media-query.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Building a Table"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Working with JSON"
+                },
+                {
+                    "url": "lesson10/",
+                    "title": "Media Queries"
+                }
+            ]
+        }
+    ]
+}
