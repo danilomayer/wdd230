@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://danilomayer.github.io/wdd230/">
     <meta name="description"
         content="Page dedicated to the association that promotes the commercial development of the city of Maringa.">
-    <title>CCM - Chamber of Commerce of Maringa</title>
+    <title>Directory</title>
     <link rel="icon" href="images/favicon.webp">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -40,38 +40,8 @@
             <a href="join.html" class="navlink">JOIN</a>
         </nav>
 
-        <div class="hero">
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/Maringá-City-HeroSmall.webp">
-                <source media="(max-width: 850px)" srcset="images/Maringá-City-Hero.webp">
-                <img src="images/Maringá-City-Hero.webp" alt="Maringa Downtown">
-            </picture>
-            <div class="herolabel">
-                <p>Maringa Downtown</p>
-            </div>
-        </div>
-
         <main>
-            <div id="current-event">
-                <h2>Events and Conferences</h2>
-            </div>
-
-            <div id="weather-card">
-                <h2>Weather</h2>
-                <p>Temperature (Fahrenheit)</p>
-                <input id="temp" type="number">
-                <p>Wind Speed (mph)</p>
-                <input id="wind" type="number"><br>
-                <button class="getwindchill">Get Wind Chill</button>
-                <script src="scripts/windchill.js"></script>
-            </div>
-
-            <div id="ads-carrousel">
-                <h2>Ad Carrousel</h2>
-                <img src="images/add1.webp" alt="Cartao de visitas 1">
-                <img src="images/add2.webp" alt="Cartao de visitas 2">
-                <img src="images/add3.webp" alt="Cartao de visitas 3">
-            </div>
+            <div id="cards"></div>
         </main>
 
         <footer>
@@ -92,6 +62,7 @@
         <script src="scripts/hambutton.js"></script>
         <script src="scripts/darkmode.js"></script>
         <script src="scripts/windchill.js"></script>
+        <script src="scripts/members.js"></script>
         <!--Script below must be finished and debugged-->
         <!--<script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
