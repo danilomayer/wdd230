@@ -1,8 +1,8 @@
-const baseURL = "https://danilomayer.github.io/wdd230/chamber/data/members.json";
-const membersURL = document.querySelector('#cards');
+const url = "https://danilomayer.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector('#cards');
 
 async function getMembers() {
-    const response = await fetch(baseURL);
+    const response = await fetch(url);
     const data = await response.json();
     console.table(data.companies);
 
@@ -16,9 +16,17 @@ async function getMembers() {
             let image = document.createElement('img');
             let membershipLevel = document.createElement('p');
 
-            link.textContent = `${company.title}`;
+            name.textContent = 'Company Name: ' `${company.name}`;
+            address.textContent = 'Address: ' `${company.address}`;
+            phone.textContent = 'Phone: ' `${company.phone}`;
+            website.textContent = 'Website: ' `${company.website}`;
+            membershipLevel.textContent = 'MembershipLevel: ' `${company.membershipLevel}`;
 
-            link.setAttribute('href', company.url);
+            image.setAttribute('href', company.image);
+            image.setAttribute('alt', `Image of ${company.name}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '400');
+            image.setAttribute('height', '450');
 
             card.appendChild(name);
             card.appendChild(address);
@@ -27,7 +35,7 @@ async function getMembers() {
             card.appendChild(image);
             card.appendChild(membershipLevel);
 
-            ul.appendChild(card);
+            cards.appendChild(card);
         });
     }
     displayLinks(data.companies);
