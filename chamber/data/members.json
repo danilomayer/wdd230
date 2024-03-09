@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "ABC Corporation",
+            "address": "123 Main Street, Cityville",
+            "phone": "+1 555-1234",
+            "website": "http://www.abc-corp.com",
+            "image": "abc-corp-logo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "XYZ Ltd.",
+            "address": "456 Oak Avenue, Townsville",
+            "phone": "+1 555-5678",
+            "website": "http://www.xyz-ltd.com",
+            "image": "xyz-ltd-logo.png",
+            "membershipLevel": "Nonprofit"
+        },
+        {
+            "name": "Sunrise Technologies",
+            "address": "789 Sunset Blvd, Tech City",
+            "phone": "+1 555-9876",
+            "website": "http://www.sunrise-tech.com",
+            "image": "sunrise-tech-logo.png",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Globex Innovations",
+            "address": "555 Innovation Avenue, Innovatown",
+            "phone": "+1 555-5432",
+            "website": "http://www.globex-innovations.com",
+            "image": "globex-logo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Evergreen Services",
+            "address": "876 Greenway, Greenvale",
+            "phone": "+1 555-8765",
+            "website": "http://www.evergreen-services.com",
+            "image": "evergreen-logo.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Tech Dynamics Inc.",
+            "address": "234 Circuit Street, Techopolis",
+            "phone": "+1 555-2345",
+            "website": "http://www.tech-dynamics.com",
+            "image": "tech-dynamics-logo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Oceanic Ventures",
+            "address": "987 Wave Avenue, Oceancity",
+            "phone": "+1 555-7890",
+            "website": "http://www.oceanic-ventures.com",
+            "image": "oceanic-logo.png",
+            "membershipLevel": "Bronze"
+        }
+    ]
+}
