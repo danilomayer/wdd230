@@ -16,17 +16,17 @@ async function getMembers() {
             let image = document.createElement('img');
             let membershipLevel = document.createElement('p');
 
-            name.textContent = 'Company Name: ' `${company.name}`;
-            address.textContent = 'Address: ' `${company.address}`;
-            phone.textContent = 'Phone: ' `${company.phone}`;
-            website.textContent = 'Website: ' `${company.website}`;
-            membershipLevel.textContent = 'MembershipLevel: ' `${company.membershipLevel}`;
+            name.textContent = 'Company Name: ' + `${company.name}`;
+            address.textContent = 'Address: ' + `${company.address}`;
+            phone.textContent = 'Phone: ' + `${company.phone}`;
+            website.textContent = 'Website: ' + `${company.website}`;
+            membershipLevel.textContent = 'MembershipLevel: ' + `${company.membershipLevel}`;
 
-            image.setAttribute('href', company.image);
+            image.setAttribute('src', company.image);
             image.setAttribute('alt', `Image of ${company.name}`);
             image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '400');
-            image.setAttribute('height', '450');
+            image.setAttribute('width', '200');
+            image.setAttribute('height', '20');
 
             card.appendChild(name);
             card.appendChild(address);
